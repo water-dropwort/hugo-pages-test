@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://water-dropwort.github.io/hugo-pages-test/posts/</loc>
+    <lastmod>2022-10-23T06:52:32+09:00</lastmod>
+  </url><url>
+    <loc>https://water-dropwort.github.io/hugo-pages-test/posts/page1/</loc>
+    <lastmod>2022-10-23T06:52:32+09:00</lastmod>
+  </url><url>
+    <loc>https://water-dropwort.github.io/hugo-pages-test/</loc>
+    <lastmod>2022-10-23T06:52:32+09:00</lastmod>
+  </url><url>
+    <loc>https://water-dropwort.github.io/hugo-pages-test/categories/</loc>
+  </url><url>
+    <loc>https://water-dropwort.github.io/hugo-pages-test/tags/</loc>
+  </url>
+</urlset>

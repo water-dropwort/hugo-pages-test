@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on テストページ</title>
+    <link>https://water-dropwort.github.io/hugo-pages-test/posts/</link>
+    <description>Recent content in Posts on テストページ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Sun, 23 Oct 2022 06:52:32 +0900</lastBuildDate><atom:link href="https://water-dropwort.github.io/hugo-pages-test/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>サイト作成からGithub pagesへの公開までのメモ</title>
+      <link>https://water-dropwort.github.io/hugo-pages-test/posts/page1/</link>
+      <pubDate>Sun, 23 Oct 2022 06:52:32 +0900</pubDate>
+      
+      <guid>https://water-dropwort.github.io/hugo-pages-test/posts/page1/</guid>
+      <description>Github側の準備 リポジトリ作成 hugoでのWebページ作成 hugo new site sitenameでサイトを作成 cd sitename hugo new theme themenameでテーマのテンプレートがtheme/themenameに作成される。 index.htmlなどのファイルが空の状態で生成されるので、中身を記述する。 </description>
+    </item>
+    
+  </channel>
+</rss>
