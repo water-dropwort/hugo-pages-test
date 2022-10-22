@@ -1,0 +1,15 @@
+{{ define "main" }}
+
+<h1>List of pages</h1>
+
+<ul>
+
+{{ range first 5 .Site.RegularPages.ByDate.Reverse }}
+<li>
+  <a href={{.Permalink }}>{{ .Name }}</a>
+</li>
+{{ end }}
+  
+</ul>
+
+{{ end }}
