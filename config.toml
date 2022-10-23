@@ -5,3 +5,4 @@ theme = 'theme-test'
 author = 'water-dropwort'
 canonifyurls = true
 hasCJKLanguage = true
+publishdir = 'docs'
