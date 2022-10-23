@@ -6,14 +6,23 @@
     <description>Recent content in Posts on テストページ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Sun, 23 Oct 2022 06:52:32 +0900</lastBuildDate><atom:link href="https://water-dropwort.github.io/hugo-pages-test/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 23 Oct 2022 15:32:55 +0900</lastBuildDate><atom:link href="https://water-dropwort.github.io/hugo-pages-test/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HugoでMathjaxを試す</title>
+      <link>https://water-dropwort.github.io/hugo-pages-test/posts/mathjax/</link>
+      <pubDate>Sun, 23 Oct 2022 15:32:55 +0900</pubDate>
+      
+      <guid>https://water-dropwort.github.io/hugo-pages-test/posts/mathjax/</guid>
+      <description>使用方法 htmlファイル(例えばヘッダの情報を記載するhtml)に、 &amp;lt;script src=&amp;#34;https://polyfill.io/v3/polyfill.min.js?features=es6&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script id=&amp;#34;MathJax-script&amp;#34; async src=&amp;#34;https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; を記載する。 マークダウン上では 新しい行から記述する場合は$$</description>
+    </item>
+    
     <item>
       <title>サイト作成からGithub pagesへの公開までのメモ</title>
       <link>https://water-dropwort.github.io/hugo-pages-test/posts/page1/</link>
       <pubDate>Sun, 23 Oct 2022 06:52:32 +0900</pubDate>
       
       <guid>https://water-dropwort.github.io/hugo-pages-test/posts/page1/</guid>
-      <description>Github側の準備 リポジトリ作成 hugoでのWebページ作成 hugo new site sitenameでサイトを作成 cd sitename hugo new theme themenameでテーマのテン</description>
+      <description>Github側の準備 リポジトリのディレクトリに .nojekyll を配置。(jekyllをoff) Setting &amp;gt; Pagesで/docsをGithub Pagesのディレク</description>
     </item>
     
   </channel>

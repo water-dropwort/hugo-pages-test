@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html><head>
   <title>サイト作成からGithub pagesへの公開までのメモ</title>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
 <div id="content">
@@ -8,17 +10,24 @@
 <h1>サイト作成からGithub pagesへの公開までのメモ</h1>
 <article>
   <h1 id="github側の準備">Github側の準備</h1>
-<ol>
-<li>リポジトリ作成</li>
-</ol>
+<ul>
+<li>リポジトリのディレクトリに .nojekyll を配置。(jekyllをoff)</li>
+<li>Setting &gt; Pagesで/docsをGithub Pagesのディレクトリとして指定。</li>
+</ul>
 <h1 id="hugoでのwebページ作成">hugoでのWebページ作成</h1>
 <ol>
 <li><code>hugo new site sitename</code>でサイトを作成</li>
-<li><code>cd sitename</code></li>
+<li><code>cd sitename</code>でサイトのディレクトリへ</li>
 <li><code>hugo new theme themename</code>でテーマのテンプレートがtheme/themenameに作成される。</li>
 <li>index.htmlなどのファイルが空の状態で生成されるので、中身を記述する。</li>
+<li><code>hugo new posts/xxx.md</code>でコンテンツを新規作成し、中身を記述する。</li>
+<li><code>hugo -D</code>でビルド。</li>
 </ol>
-
+<h1 id="configtoml">config.toml</h1>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#a6e22e">baseURL</span> = <span style="color:#e6db74">&#39;https://username.github.io/repositoryname&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">theme</span> = <span style="color:#e6db74">&#39;themename&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">publishdir</span> =  <span style="color:#e6db74">&#39;docs&#39;</span>
+</span></span></code></pre></div>
 </article>
 
 
