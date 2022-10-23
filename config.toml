@@ -2,3 +2,6 @@ baseURL = 'https://water-dropwort.github.io/hugo-pages-test'
 languageCode = 'ja-jp'
 title = 'テストページ'
 theme = 'theme-test'
+author = 'water-dropwort'
+canonifyurls = true
+hasCJKLanguage = true
