@@ -6,7 +6,16 @@
     <description>Recent content on テストページ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Sun, 23 Oct 2022 15:32:55 +0900</lastBuildDate><atom:link href="https://water-dropwort.github.io/hugo-pages-test/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 28 Jan 2023 13:41:34 +0900</lastBuildDate><atom:link href="https://water-dropwort.github.io/hugo-pages-test/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HugoのthemeにCSSファイルを追加する</title>
+      <link>https://water-dropwort.github.io/hugo-pages-test/posts/add-css/</link>
+      <pubDate>Sat, 28 Jan 2023 13:41:34 +0900</pubDate>
+      
+      <guid>https://water-dropwort.github.io/hugo-pages-test/posts/add-css/</guid>
+      <description>テーマ内のstatic/cssフォルダにcssファイルを格納する。 例：theme-test/static/css/test.css ※stat</description>
+    </item>
+    
     <item>
       <title>HugoでMathjaxを試す</title>
       <link>https://water-dropwort.github.io/hugo-pages-test/posts/mathjax/</link>

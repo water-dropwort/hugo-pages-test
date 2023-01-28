@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>HugoのthemeにCSSファイルを追加する</title>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link href="https://water-dropwort.github.io/hugo-pages-test/css/theme-test.css" rel="stylesheet">
+</head>
+
+  <body>
+    
+
+<div class="page-name">
+  HugoのthemeにCSSファイルを追加する
+</div>
+<article>
+  <ol>
+<li>テーマ内のstatic/cssフォルダにcssファイルを格納する。<br>
+例：theme-test/static/css/test.css<br>
+※static/cssは(おそらく)固定で、名前を変えると読み込めない。</li>
+<li>htmlファイルで、<code>&lt;href link=&quot;{{ relURL &quot;css/test.css&quot; }}&quot; href=&quot;stylesheet&quot;&gt;</code> を記載することで使用できる。<br>
+relURLに指定した値は、baseURL＠config.tomlの値と統合される。
+例：<code>baseURL=https://go-example.com</code>ならば、上記のlink属性の値は<code>https://go-example.com/css/test.css</code>となる。</li>
+</ol>
+
+</article>
+
+
+  </body>
+</html>
