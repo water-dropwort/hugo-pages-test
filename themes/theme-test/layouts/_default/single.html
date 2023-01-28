@@ -1,10 +1,15 @@
 {{ define "main" }}
 
-<div class="page-name">
-  {{ .Name }}
+<div class="page-title-area">
+  <div class="page-title">
+    {{ .Name }}
+  </div>
+  <div class="page-info">
+    created date:{{.Date.Format "2006-01-02 15:04"}}
+  </div>
 </div>
-<article>
+<div class="page-content-area">
   {{ .Content }}
-</article>
+</div>
 
 {{ end }}

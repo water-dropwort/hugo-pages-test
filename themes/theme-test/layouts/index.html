@@ -1,7 +1,12 @@
 {{ define "main" }}
 
-<div >
-  <h1>List of pages</h1>
+<div class="site-title">
+  {{ .Title }}
+</div>
+
+<div class="site-description">
+  {{ .Site.Params.description }}<br>
+  <a href="{{ .Site.Params.repository_url }}">Github Repository</a>
 </div>
 
 <ul>

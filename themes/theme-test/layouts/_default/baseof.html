@@ -1,8 +1,25 @@
 <!DOCTYPE html>
 <html>
-  {{ partial "head.html" . }}
+  <head>
+    {{ partial "head.html" . }}
+  </head>
   <body>
-    {{ block "main" . }}
-    {{ end }}
+    <div class="book">
+      <div class="book-menu">
+	<nav role="navigation">
+	  <ul class="menu-list">
+	    {{ range .Site.RegularPages }}
+	    <li class="menu-list-item">
+	      <a href={{.Permalink }}>{{ .Name }}</a>
+	    </li>
+	    {{ end }}
+	  </ul>
+	</nav>
+      </div>
+      <div class="book-main">
+	{{ block "main" . }}
+	{{ end }}
+      </div>
+    </div>
   </body>
 </html>

@@ -1,10 +1,42 @@
 body {
-    background: rgb(191,228,255);
+    background: whitesmoke;
 }
 
-.page-name {
-    background: rgb(216,242,85);
-    display: flex;
+.book {
+    display : block;
+}
+
+.book-menu {
+    max-width: 300px;
+    display : block;
+}
+
+
+
+.site-title {
+    font-size: 2.0em;
+    color : rgb(0,90,255);
+}
+
+.site-description {
+    
+}
+
+.page-content-area {
+    max-width : 70%;
+}
+
+.page-title-area {
+    border: 1px solid;
     padding: 0.5em;
+}
+
+.page-title {
+    display: flex;
     font-size: 1.1em;
+} 
+
+.page-info {
+    font-size: 0.8em;
+    text-align: end;
 }
