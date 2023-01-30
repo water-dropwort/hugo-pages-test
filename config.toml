@@ -2,10 +2,10 @@ baseURL = 'https://water-dropwort.github.io/hugo-pages-test'
 languageCode = 'ja-jp'
 title = 'Hugo Notes'
 theme = 'theme-test'
-author = 'water-dropwort'
 canonifyurls = true
 hasCJKLanguage = true
 publishdir = 'docs'
 [params]
+  author = 'water-dropwort'
   description ='このサイトには、Hugo & github pagesに関するメモ書きをアップしています。'
   repository_url = 'https://github.com/water-dropwort/hugo-pages-test'

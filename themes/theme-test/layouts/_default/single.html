@@ -1,15 +1,13 @@
 {{ define "main" }}
-
-<div class="page-title-area">
-  <div class="page-title">
-    {{ .Name }}
+<div class="book">
+  <!-- left side -->
+  <div class="book-sidebar">
+    <!-- table of contents -->
+	{{ partial "toc.html" . }}
   </div>
-  <div class="page-info">
-    created date:{{.Date.Format "2006-01-02 15:04"}}
+  <!-- right side -->
+  <div class="book-main">
+    {{ partial "page.html" . }}
   </div>
 </div>
-<div class="page-content-area">
-  {{ .Content }}
-</div>
-
 {{ end }}
