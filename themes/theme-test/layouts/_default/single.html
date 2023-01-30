@@ -1,10 +1,13 @@
 {{ define "main" }}
-
-<div class="page-name">
-  {{ .Name }}
+<div class="book">
+  <!-- left side -->
+  <div class="book-sidebar">
+    <!-- table of contents -->
+	{{ partial "toc.html" . }}
+  </div>
+  <!-- right side -->
+  <div class="book-main">
+    {{ partial "page.html" . }}
+  </div>
 </div>
-<article>
-  {{ .Content }}
-</article>
-
 {{ end }}

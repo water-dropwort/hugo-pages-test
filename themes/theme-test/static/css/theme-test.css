@@ -1,10 +1,72 @@
-body {
-    background: rgb(191,228,255);
+.book {
+    display : flex;
+}
+
+.book-sidebar {
+    width : 20%;
+}
+
+.book-main {
+    width : 80%;
+}
+
+.toc-container {
+    padding : 2em 0em 0em 1em;
+}
+
+.toc {
+    font-size: 0.9em;
+}
+
+.toc-section-name {
+    font-weight : bold;
+}
+
+.toc-page-name {
+    padding : 0em 0.2em 0.2em 0.5em;
+    block-size : auto;
+}
+
+a.toc-page-link {
+    text-decoration: none;
+    color : inherit;
+}
+
+.toc-active-page-name {
+    background : lightgray;
+}
+
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow: auto;
+    padding : 0.5em;
+}
+
+.page-container {
+    padding : 2em;
+}
+
+.card {
+    border-radius : 0.5em;
+    box-shadow: 0em 0em 1em rgba(30,30,30,0.38);
+}
+
+.page {
+    padding : 2em;
+    max-width : 1200px;
+    margin : 0 auto;
 }
 
 .page-name {
-    background: rgb(216,242,85);
-    display: flex;
-    padding: 0.5em;
-    font-size: 1.1em;
+    text-align : center;
 }
+
+.page-content {
+    color : black;
+}
+
+hr.page-divider {
+    color : lightgray;
+}
+
