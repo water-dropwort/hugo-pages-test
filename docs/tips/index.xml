@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tips on Hugo Notes</title>
+    <link>https://water-dropwort.github.io/hugo-pages-test/tips/</link>
+    <description>Recent content in Tips on Hugo Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Sun, 23 Oct 2022 15:32:55 +0900</lastBuildDate><atom:link href="https://water-dropwort.github.io/hugo-pages-test/tips/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HugoでMathjaxを試す</title>
+      <link>https://water-dropwort.github.io/hugo-pages-test/tips/mathjax/</link>
+      <pubDate>Sun, 23 Oct 2022 15:32:55 +0900</pubDate>
+      
+      <guid>https://water-dropwort.github.io/hugo-pages-test/tips/mathjax/</guid>
+      <description>使用方法 htmlファイル(例えばヘッダの情報を記載するhtml)に、 &amp;lt;script src=&amp;#34;https://polyfill.io/v3/polyfill.min.js?features=es6&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script id=&amp;#34;MathJax-script&amp;#34; async src=&amp;#34;https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; を記載する。 マークダウン上では 新しい行から記述する場合は$$</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -2,19 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://water-dropwort.github.io/hugo-pages-test/posts/add-css/</loc>
-    <lastmod>2023-01-28T13:41:34+09:00</lastmod>
-  </url><url>
-    <loc>https://water-dropwort.github.io/hugo-pages-test/posts/</loc>
-    <lastmod>2023-01-28T13:41:34+09:00</lastmod>
-  </url><url>
     <loc>https://water-dropwort.github.io/hugo-pages-test/</loc>
     <lastmod>2023-01-28T13:41:34+09:00</lastmod>
   </url><url>
-    <loc>https://water-dropwort.github.io/hugo-pages-test/posts/mathjax/</loc>
+    <loc>https://water-dropwort.github.io/hugo-pages-test/theme/add-css/</loc>
+    <lastmod>2023-01-28T13:41:34+09:00</lastmod>
+  </url><url>
+    <loc>https://water-dropwort.github.io/hugo-pages-test/theme/</loc>
+    <lastmod>2023-01-28T13:41:34+09:00</lastmod>
+  </url><url>
+    <loc>https://water-dropwort.github.io/hugo-pages-test/tips/mathjax/</loc>
     <lastmod>2022-10-23T15:32:55+09:00</lastmod>
   </url><url>
-    <loc>https://water-dropwort.github.io/hugo-pages-test/posts/page1/</loc>
+    <loc>https://water-dropwort.github.io/hugo-pages-test/tips/</loc>
+    <lastmod>2022-10-23T15:32:55+09:00</lastmod>
+  </url><url>
+    <loc>https://water-dropwort.github.io/hugo-pages-test/introduction/</loc>
+    <lastmod>2022-10-23T06:52:32+09:00</lastmod>
+  </url><url>
+    <loc>https://water-dropwort.github.io/hugo-pages-test/introduction/getstarted/</loc>
     <lastmod>2022-10-23T06:52:32+09:00</lastmod>
   </url><url>
     <loc>https://water-dropwort.github.io/hugo-pages-test/categories/</loc>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Introductions on Hugo Notes</title>
+    <link>https://water-dropwort.github.io/hugo-pages-test/introduction/</link>
+    <description>Recent content in Introductions on Hugo Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Sun, 23 Oct 2022 06:52:32 +0900</lastBuildDate><atom:link href="https://water-dropwort.github.io/hugo-pages-test/introduction/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>サイト作成からGithub pagesへの公開までのメモ</title>
+      <link>https://water-dropwort.github.io/hugo-pages-test/introduction/getstarted/</link>
+      <pubDate>Sun, 23 Oct 2022 06:52:32 +0900</pubDate>
+      
+      <guid>https://water-dropwort.github.io/hugo-pages-test/introduction/getstarted/</guid>
+      <description>Github側の準備 リポジトリのディレクトリに .nojekyll を配置。(jekyllをoff) Setting &amp;gt; Pagesで/docsをGithub Pagesのディレク</description>
+    </item>
+    
+  </channel>
+</rss>
