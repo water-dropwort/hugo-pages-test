@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>サイト作成からビルドまで</title>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<link href="https://water-dropwort.github.io/hugo-pages-test/css/theme-test.css" rel="stylesheet">
+
+  </head>
+  <body>
+    
+<div class="book">
+  
+  <div class="book-sidebar">
+    
+    <div class="toc-container">
+	   
+
+
+
+
+<div class="toc">
+  
+  <div class="toc-section-name">
+    HTML/CSS Tips
+  </div>
+
+  
+
+  
+  <div class="toc-page-name">
+    <a class="toc-page-link" href="https://water-dropwort.github.io/hugo-pages-test/html-css-tips/using-mathjax/">MathJaxを使用する</a>
+  </div>
+  
+
+   
+
+  
+  <div class="toc-section-name">
+    Hugo Tips
+  </div>
+
+  
+
+  
+  <div class="toc-page-name">
+    <div class="toc-active-page-name">
+      <a class="toc-page-link" href="https://water-dropwort.github.io/hugo-pages-test/hugo-tips/get-started/">サイト作成からビルドまで</a>
+    </div>
+  </div>
+  
+
+  
+
+  
+  <div class="toc-page-name">
+    <a class="toc-page-link" href="https://water-dropwort.github.io/hugo-pages-test/hugo-tips/publish-github-pages/">GitHub Pagesで公開する</a>
+  </div>
+  
+
+   
+
+   
+</div>
+
+
+
+    </div>
+  </div>
+  
+  <div class="book-main">
+    <div class="page-container">
+      <div class="card">
+  <div class="page">
+    <h1 class="page-name">
+      サイト作成からビルドまで
+    </h1>
+    <hr class="page-divider"/>
+    <div class="page-content">
+      <h2 id="手順">手順</h2>
+<ol>
+<li><code>hugo new site sitename</code>でサイトを作成</li>
+<li><code>cd sitename</code>でサイトのディレクトリへ</li>
+<li><code>hugo new theme themename</code>でテーマのテンプレートが sitename/themes/themename に作成される。</li>
+<li>index.htmlなどのファイルが空の状態で生成されるので、中身を記述する。</li>
+<li><code>hugo new posts/xxx.md</code>でコンテンツを新規作成し、中身を記述する。<br>
+このコマンドで、sitename/content/posts/xxx.md が作成される。</li>
+<li><code>hugo -D</code>でビルド。<br>
+config.toml の publishdir に指定されたフォルダに、htmlファイルが作成される。</li>
+</ol>
+
+    </div>
+  </div>
+</div>
+
+    </div>
+  </div>
+</div>
+
+  </body>
+</html>

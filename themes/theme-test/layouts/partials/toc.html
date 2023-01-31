@@ -1,31 +1,29 @@
 {{ define "toc" }}
 
 {{ $current_page := .Permalink }}
-<div class="toc-container">
-  <div class="toc">
-    {{ range .Site.Sections }}
-    <div class="toc-section-name">
-      {{ .Name }}
-    </div>
+<div class="toc">
+  {{ range .Site.Sections }}
+  <div class="toc-section-name">
+    {{ .Name }}
+  </div>
 
-    {{ range .RegularPages }}
+  {{ range .RegularPages }}
 
-    {{ if eq $current_page .Permalink }}
-    <div class="toc-page-name">
-      <div class="toc-active-page-name">
-        <a class="toc-page-link" href="{{ .Permalink }}">{{ .Name }}</a>
-      </div>
-    </div>
-    {{ else }}
-    <div class="toc-page-name">
+  {{ if eq $current_page .Permalink }}
+  <div class="toc-page-name">
+    <div class="toc-active-page-name">
       <a class="toc-page-link" href="{{ .Permalink }}">{{ .Name }}</a>
     </div>
-    {{ end }}
-
-    {{ end }} <!-- end of range .RegularPages  -->
-
-    {{ end }} <!-- end of range .Site.Sections -->
   </div>
+  {{ else }}
+  <div class="toc-page-name">
+    <a class="toc-page-link" href="{{ .Permalink }}">{{ .Name }}</a>
+  </div>
+  {{ end }}
+
+  {{ end }} <!-- end of range .RegularPages  -->
+
+  {{ end }} <!-- end of range .Site.Sections -->
 </div>
 
 {{ end }} <!-- end of define -->

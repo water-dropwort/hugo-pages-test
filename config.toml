@@ -5,7 +5,3 @@ theme = 'theme-test'
 canonifyurls = true
 hasCJKLanguage = true
 publishdir = 'docs'
-[params]
-  author = 'water-dropwort'
-  description ='このサイトには、Hugo & github pagesに関するメモ書きをアップしています。'
-  repository_url = 'https://github.com/water-dropwort/hugo-pages-test'

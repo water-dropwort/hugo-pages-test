@@ -3,11 +3,15 @@
   <!-- left side -->
   <div class="book-sidebar">
     <!-- table of contents -->
-	{{ partial "toc.html" . }}
+    <div class="toc-container">
+	  {{ partial "toc.html" . }}
+    </div>
   </div>
   <!-- right side -->
   <div class="book-main">
-    {{ partial "page.html" . }}
+    <div class="page-container">
+      {{ partial "page.html" . }}
+    </div>
   </div>
 </div>
 {{ end }}
