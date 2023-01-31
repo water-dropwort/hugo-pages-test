@@ -1,0 +1,47 @@
+{{ define "main" }}
+<style>
+  .index-container {
+  padding : 2em;
+  }
+
+  .index-title {
+  font-size : 2.0em;
+  text-align : center;
+  }
+
+  .index-inner-container {
+  padding : 2em;
+  }
+
+  .index-description-container {
+  padding : 2em 0 0 2em;
+  }
+
+  .index-toc-container {
+  padding : 2em 0 0 2em;
+  }
+</style>
+<div class="index-container">
+  <div class="card">
+    <div class="index-inner-container">
+      <div class="index-title">
+        {{ .Title }}
+      </div>
+      <hr class="page-divider">
+      <div class="index-description-container">
+        This web site is created with Hugo.<br>
+        Hugo is a static site generator implemented in golang.<br>
+        <a href="https://github.com/water-dropwort/hugo-pages-test">GitHub repository for this site</a>
+      </div>
+      <div class="index-toc-container">
+        <h2>
+          Table of Contents
+        </h2>
+        <div>
+          {{ partial "toc" . }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}

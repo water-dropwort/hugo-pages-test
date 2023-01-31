@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MathJaxを使用する</title>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<link href="https://water-dropwort.github.io/hugo-pages-test/css/theme-test.css" rel="stylesheet">
+
+  </head>
+  <body>
+    
+<div class="book">
+  
+  <div class="book-sidebar">
+    
+    <div class="toc-container">
+	   
+
+
+
+
+<div class="toc">
+  
+  <div class="toc-section-name">
+    HTML/CSS Tips
+  </div>
+
+  
+
+  
+  <div class="toc-page-name">
+    <div class="toc-active-page-name">
+      <a class="toc-page-link" href="https://water-dropwort.github.io/hugo-pages-test/html-css-tips/using-mathjax/">MathJaxを使用する</a>
+    </div>
+  </div>
+  
+
+   
+
+  
+  <div class="toc-section-name">
+    Hugo Tips
+  </div>
+
+  
+
+  
+  <div class="toc-page-name">
+    <a class="toc-page-link" href="https://water-dropwort.github.io/hugo-pages-test/hugo-tips/get-started/">サイト作成からビルドまで</a>
+  </div>
+  
+
+  
+
+  
+  <div class="toc-page-name">
+    <a class="toc-page-link" href="https://water-dropwort.github.io/hugo-pages-test/hugo-tips/publish-github-pages/">GitHub Pagesで公開する</a>
+  </div>
+  
+
+   
+
+   
+</div>
+
+
+
+    </div>
+  </div>
+  
+  <div class="book-main">
+    <div class="page-container">
+      <div class="card">
+  <div class="page">
+    <h1 class="page-name">
+      MathJaxを使用する
+    </h1>
+    <hr class="page-divider"/>
+    <div class="page-content">
+      <h2 id="使用方法">使用方法</h2>
+<p>htmlファイルのヘッダなどに、</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://polyfill.io/v3/polyfill.min.js?features=es6&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;MathJax-script&#34;</span> <span style="color:#a6e22e">async</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
+</span></span></code></pre></div><p>を記載する。<br>
+マークダウン上では</p>
+<ul>
+<li>新しい行から記述する場合は<code>$$</code>と<code>$$</code>で挟んだ領域にtexを記述する。</li>
+<li>インラインで記述したい場合は<code>\\(</code>と<code>\\)</code>で挟んだ領域にtexを記述する。(<code>$</code>で挟んだ場合はうまく動作しなかった)</li>
+</ul>
+<h2 id="動作確認">動作確認</h2>
+<p>ポアソン分布の定義は
+$$ P(y|\lambda) = \frac{\lambda^{y}e^{-\lambda}}{y!} $$
+である。<br>
+上記式の\(y\)は事象の発生回数、\(\lambda\)は平均あるいは分散である。<br>
+\(\boldsymbol{x}\)を説明変数のベクトル、\(\boldsymbol{\beta}\)をパラメータのベクトルとして、<br>
+\(\lambda = \exp {\boldsymbol{x}^T\boldsymbol{\beta}}\)とすると、リンク関数を\(\ln x\) としたポアソン回帰モデルになる。</p>
+
+    </div>
+  </div>
+</div>
+
+    </div>
+  </div>
+</div>
+
+  </body>
+</html>
