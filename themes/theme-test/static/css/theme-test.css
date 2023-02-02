@@ -3,15 +3,15 @@
 }
 
 .book-sidebar {
-    width : 20%;
+    width : 300px;
 }
 
 .book-main {
-    width : 80%;
+    width : 100%;
 }
 
 .toc-container {
-    padding : 2em 0em 0em 1em;
+    padding : 3em 0em 0em 1em;
 }
 
 .toc {
@@ -47,15 +47,22 @@ pre {
     padding : 2em;
 }
 
+.page-inner-container {
+    padding : 0em 2em 2em 2em;
+    max-width : 80%;
+    margin : 0 auto;
+}
+
 .card {
     border-radius : 0.5em;
     box-shadow: 0em 0em 1em rgba(30,30,30,0.38);
 }
 
+.page-toggle-button-container {
+    padding : 0.5em 0 0 0.5em;
+}
+
 .page {
-    padding : 2em;
-    max-width : 1200px;
-    margin : 0 auto;
 }
 
 .page-name {
@@ -68,4 +75,19 @@ pre {
 
 hr.page-divider {
     color : lightgray;
+}
+
+.icon-button {
+    background-color: white;
+    border: none;
+    color: dimgray;
+    width : 32px;
+    height : 32px;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.icon-button:hover {
+    background-color : lightgray;
+    color : black;
 }

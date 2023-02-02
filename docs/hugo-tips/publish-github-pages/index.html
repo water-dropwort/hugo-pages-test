@@ -7,13 +7,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
 <link href="https://water-dropwort.github.io/hugo-pages-test/css/theme-test.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 
   </head>
   <body>
     
 <div class="book">
   
-  <div class="book-sidebar">
+  <div class="book-sidebar" id="book-sidebar">
     
     <div class="toc-container">
 	   
@@ -73,13 +74,32 @@
   <div class="book-main">
     <div class="page-container">
       <div class="card">
-  <div class="page">
-    <h1 class="page-name">
-      GitHub Pagesで公開する
-    </h1>
-    <hr class="page-divider"/>
-    <div class="page-content">
-      <h2 id="hugo側の設定">Hugo側の設定</h2>
+        <div class="page-toggle-button-container">
+          <button class="icon-button" onclick="toggle_sidebar_visibility()">
+            <i class="fa fa-bars"></i>
+          </button>
+          <script>
+            function toggle_sidebar_visibility() {
+            var sidebar = document.getElementById("book-sidebar");
+            console.log("called function");
+            if (sidebar.style.display === "none") {
+            sidebar.style.display = "block";
+            }
+            else {
+            sidebar.style.display = "none";
+            }
+            }
+          </script>
+
+        </div>
+        <div class="page-inner-container">
+          <div class="page">
+  <h1 class="page-name">
+    GitHub Pagesで公開する
+  </h1>
+  <hr class="page-divider"/>
+  <div class="page-content">
+    <h2 id="hugo側の設定">Hugo側の設定</h2>
 <p>configファイルに、publishdir = &lsquo;docs&rsquo; を記載する。<br>
 この設定により、<code>hugo -D</code>コマンドで生成されたhtmlファイル等は、「/docs」に保存される。</p>
 <h2 id="github側の設定">GitHub側の設定</h2>
@@ -89,10 +109,11 @@
 この設定により、GitHub Pagesは「/docs」内のファイルから構築される。</li>
 </ul>
 
-    </div>
   </div>
 </div>
 
+        </div>
+      </div>
     </div>
   </div>
 </div>

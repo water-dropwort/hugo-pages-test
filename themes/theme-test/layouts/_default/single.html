@@ -1,7 +1,7 @@
 {{ define "main" }}
 <div class="book">
   <!-- left side -->
-  <div class="book-sidebar">
+  <div class="book-sidebar" id="book-sidebar">
     <!-- table of contents -->
     <div class="toc-container">
 	  {{ partial "toc.html" . }}
@@ -10,7 +10,29 @@
   <!-- right side -->
   <div class="book-main">
     <div class="page-container">
-      {{ partial "page.html" . }}
+      <div class="card">
+        <div class="page-toggle-button-container">
+          <button class="icon-button" onclick="toggle_sidebar_visibility()">
+            <i class="fa fa-bars"></i>
+          </button>
+          <script>
+            function toggle_sidebar_visibility() {
+            var sidebar = document.getElementById("book-sidebar");
+            console.log("called function");
+            if (sidebar.style.display === "none") {
+            sidebar.style.display = "block";
+            }
+            else {
+            sidebar.style.display = "none";
+            }
+            }
+          </script>
+
+        </div>
+        <div class="page-inner-container">
+          {{ partial "page.html" . }}
+        </div>
+      </div>
     </div>
   </div>
 </div>
