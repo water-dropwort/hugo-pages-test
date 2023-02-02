@@ -7,13 +7,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
 <link href="https://water-dropwort.github.io/hugo-pages-test/css/theme-test.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 
   </head>
   <body>
     
 <div class="book">
   
-  <div class="book-sidebar">
+  <div class="book-sidebar" id="book-sidebar">
     
     <div class="toc-container">
 	   
@@ -73,13 +74,32 @@
   <div class="book-main">
     <div class="page-container">
       <div class="card">
-  <div class="page">
-    <h1 class="page-name">
-      MathJaxを使用する
-    </h1>
-    <hr class="page-divider"/>
-    <div class="page-content">
-      <h2 id="使用方法">使用方法</h2>
+        <div class="page-toggle-button-container">
+          <button class="icon-button" onclick="toggle_sidebar_visibility()">
+            <i class="fa fa-bars"></i>
+          </button>
+          <script>
+            function toggle_sidebar_visibility() {
+            var sidebar = document.getElementById("book-sidebar");
+            console.log("called function");
+            if (sidebar.style.display === "none") {
+            sidebar.style.display = "block";
+            }
+            else {
+            sidebar.style.display = "none";
+            }
+            }
+          </script>
+
+        </div>
+        <div class="page-inner-container">
+          <div class="page">
+  <h1 class="page-name">
+    MathJaxを使用する
+  </h1>
+  <hr class="page-divider"/>
+  <div class="page-content">
+    <h2 id="使用方法">使用方法</h2>
 <p>htmlファイルのヘッダなどに、</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://polyfill.io/v3/polyfill.min.js?features=es6&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
 </span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;MathJax-script&#34;</span> <span style="color:#a6e22e">async</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
@@ -97,10 +117,11 @@ $$ P(y|\lambda) = \frac{\lambda^{y}e^{-\lambda}}{y!} $$
 \(\boldsymbol{x}\)を説明変数のベクトル、\(\boldsymbol{\beta}\)をパラメータのベクトルとして、<br>
 \(\lambda = \exp {\boldsymbol{x}^T\boldsymbol{\beta}}\)とすると、リンク関数を\(\ln x\) としたポアソン回帰モデルになる。</p>
 
-    </div>
   </div>
 </div>
 
+        </div>
+      </div>
     </div>
   </div>
 </div>
