@@ -1,33 +1,20 @@
 {{ define "main" }}
 <div class="book">
   <!-- left side -->
-  <div class="book-sidebar" id="book-sidebar">
+  <div class="book-sidebar" id="book-sidebar" layout-status="two-column">
     <!-- table of contents -->
     <div class="toc-container">
 	  {{ partial "toc.html" . }}
     </div>
   </div>
   <!-- right side -->
-  <div class="book-main">
+  <div class="book-main" id="book-main" layout-status="two-column">
     <div class="page-container">
       <div class="card">
         <div class="page-toggle-button-container">
           <button class="icon-button" onclick="toggle_sidebar_visibility()">
             <i class="fa fa-bars"></i>
           </button>
-          <script>
-            function toggle_sidebar_visibility() {
-            var sidebar = document.getElementById("book-sidebar");
-            console.log("called function");
-            if (sidebar.style.display === "none") {
-            sidebar.style.display = "block";
-            }
-            else {
-            sidebar.style.display = "none";
-            }
-            }
-          </script>
-
         </div>
         <div class="page-inner-container">
           {{ partial "page.html" . }}
@@ -35,5 +22,9 @@
       </div>
     </div>
   </div>
+  <script src="{{ relURL "js/single.js" }}"></script>
+  <script>
+    init_single();
+  </script>
 </div>
 {{ end }}
