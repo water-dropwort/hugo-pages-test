@@ -2,16 +2,45 @@
     display : flex;
 }
 
-.book-sidebar {
-    width : 300px;
+/* sidebar hidden layout */
+.book-sidebar[layout-status="main-only"] {
+    display : none;
 }
 
-.book-main {
+.book-main[layout-status="main-only"] {
     width : 100%;
 }
 
+/* two-column layout */
+.book-sidebar[layout-status="two-column"] {
+    width : 20%;
+    display : block;
+}
+
+.book-main[layout-status="two-column"] {
+    width : 80%;
+}
+
+/* two-column layout for smart phone */
+@media (max-width: 520px) {
+    .book-sidebar[layout-status="two-column"] {
+        width : 50%;
+        display : block;
+    }
+
+    .book-main[layout-status="two-column"] {
+        width : 50%;
+    }
+}
+
 .toc-container {
-    padding : 3em 0em 0em 1em;
+    padding : 1em 0em 0em 1em;
+}
+
+@media (max-width: 520px) {
+    .toc-container {
+        padding : 0;
+    }
 }
 
 .toc {
@@ -32,6 +61,10 @@ a.toc-page-link {
     color : inherit;
 }
 
+a.toc-page-link:hover {
+    text-decoration: underline;
+}
+
 .toc-active-page-name {
     background : lightgray;
 }
@@ -44,13 +77,26 @@ pre {
 }
 
 .page-container {
-    padding : 2em;
+    padding : 1em;
+}
+
+@media (max-width: 520px) {
+    .page-container {
+        padding : 0em;
+    }
 }
 
 .page-inner-container {
     padding : 0em 2em 2em 2em;
     max-width : 80%;
     margin : 0 auto;
+}
+
+@media (max-width: 520px) {
+    .page-inner-container {
+            padding : 0em 0.5em 0.5em 0.5em;
+            max-width : 100%;
+    }
 }
 
 .card {
@@ -67,10 +113,13 @@ pre {
 
 .page-name {
     text-align : center;
+    font-size : 1.8em;
+    font-weight: bold;
 }
 
 .page-content {
     color : black;
+    overflow-wrap: break-word;
 }
 
 hr.page-divider {
@@ -81,10 +130,11 @@ hr.page-divider {
     background-color: white;
     border: none;
     color: dimgray;
-    width : 32px;
-    height : 32px;
+    width : 1.5em;
+    height : 1.5em;
     font-size: 1.5em;
     cursor: pointer;
+    padding : 0;
 }
 
 .icon-button:hover {

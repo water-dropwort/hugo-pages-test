@@ -14,7 +14,7 @@
     
 <div class="book">
   
-  <div class="book-sidebar" id="book-sidebar">
+  <div class="book-sidebar" id="book-sidebar" layout-status="two-column">
     
     <div class="toc-container">
 	   
@@ -71,32 +71,19 @@
     </div>
   </div>
   
-  <div class="book-main">
+  <div class="book-main" id="book-main" layout-status="two-column">
     <div class="page-container">
       <div class="card">
         <div class="page-toggle-button-container">
           <button class="icon-button" onclick="toggle_sidebar_visibility()">
             <i class="fa fa-bars"></i>
           </button>
-          <script>
-            function toggle_sidebar_visibility() {
-            var sidebar = document.getElementById("book-sidebar");
-            console.log("called function");
-            if (sidebar.style.display === "none") {
-            sidebar.style.display = "block";
-            }
-            else {
-            sidebar.style.display = "none";
-            }
-            }
-          </script>
-
         </div>
         <div class="page-inner-container">
           <div class="page">
-  <h1 class="page-name">
+  <div class="page-name">
     MathJaxを使用する
-  </h1>
+  </div>
   <hr class="page-divider"/>
   <div class="page-content">
     <h2 id="使用方法">使用方法</h2>
@@ -124,6 +111,10 @@ $$ P(y|\lambda) = \frac{\lambda^{y}e^{-\lambda}}{y!} $$
       </div>
     </div>
   </div>
+  <script src="https://water-dropwort.github.io/hugo-pages-test/js/single.js"></script>
+  <script>
+    init_single();
+  </script>
 </div>
 
   </body>
