@@ -32,6 +32,10 @@ a.toc-page-link {
     color : inherit;
 }
 
+a.toc-page-link:hover {
+    text-decoration: underline;
+}
+
 .toc-active-page-name {
     background : lightgray;
 }
