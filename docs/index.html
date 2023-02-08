@@ -15,12 +15,13 @@
     
 <style>
   .index-container {
-  padding : 2em;
+  padding : 1em;
   }
 
   .index-title {
   font-size : 2.0em;
   text-align : center;
+  font-weight : bold;
   }
 
   .index-inner-container {
@@ -34,6 +35,26 @@
   .index-toc-container {
   padding : 2em 0 0 2em;
   }
+
+  @media (max-width: 520px) {
+  .index-container {
+  padding : 0;
+  }
+
+  .index-inner-container {
+  padding : 1em;
+  }
+
+  .index-description-container {
+  padding : 1em 0;
+  }
+
+  .index-toc-container {
+  padding : 1em 0;
+  }
+
+  }
+
 </style>
 <div class="index-container">
   <div class="card">
